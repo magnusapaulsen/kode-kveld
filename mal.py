@@ -1,3 +1,13 @@
+'''
+Other things to think about:
+    - Game states, separate loops for each state
+    - Asset management
+    - UI / HUD
+    - Animation with Animation Manager or frame counter
+    - Music and sound
+    - Saving stats in JSON
+    - Level management
+'''
 import sys, pygame # Import modules
 
 pygame.init() # Initialize Pygame
