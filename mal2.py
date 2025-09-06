@@ -110,7 +110,6 @@ while running:
         spawn_timer = 0
         if enemy_spawn_cooldown > enemy_spawn_cooldown_min:
             enemy_spawn_cooldown -= 1
-            print(enemy_spawn_cooldown)
 
     all_group.update()
 
