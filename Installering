@@ -1,0 +1,49 @@
+INSTALLERING AV PYTHON, PIP OG PYGAME
+-----------------------------------------------------------------------------------------
+For Windows:
+
+Hvis du ikke har installert Python:
+    1) Gå til https://python.org/downloads/windows/
+    2) Last ned siste versjon av Windows installer
+    3) Følg instrukser for å fullføre installeringen
+        3.1) Husk å krysse av for 'Add Python to PATH'
+    4) Trykk på Windows-knappen og skriv 'cmd' for å åpne Command Prompt
+    5) Skriv 'python --version' for å sjekke at Python er installert
+        5.1) Hvis det ikke funker, prøv 'python3 --version'
+        5.2) Hvis det heller ikke funker, må du installere på nytt
+
+Hvis du ikke har installert pip
+    6) Trykk på Windows-knappen og skriv 'cmd' for å åpne Command Prompt
+    7) Skriv 'pip --version' for å sjekke at pip er installert
+        6.1) Hvis det ikke funker, prøv 'pip3 --version'
+        6.2) Hvis det heller ikke funker, må du installere pip manuelt
+
+Hvis du har installert Python og pip
+    8) Trykk på Windows-knappen og skriv 'cmd' for å åpne Command Prompt
+    9) Skriv 'pip install pygame'
+        7.1) Hvis det ikke funker, prøv 'pip3 install pygame'
+        7.2) Hvis det ikke funker må du dobbeltsjekke installeringene av Python og pip
+-----------------------------------------------------------------------------------------
+For macOS:
+
+Hvis du ikke har installert Python:
+    1) Gå til https://python.org/downloads/macos/
+    2) Last ned siste versjon av macOS installer
+    3) Følg instrukser for å fullføre installeringen
+    4) Åpne Terminal
+    5) Skriv 'python3 --version' for å sjekke at Python er installert
+        5.1) Hvis det ikke funker, prøv 'python --version'
+        5.2) Hvis det heller ikke funker, må du installere på nytt
+
+Hvis du ikke har installert pip
+    6) Åpne Terminal
+    7) Skriv 'pip3 --version' for å sjekke at pip er installert
+        6.1) Hvis det ikke funker, prøv 'pip --version'
+        6.2) Hvis det heller ikke funker, må du installere pip3 manuelt
+
+Hvis du har installert Python og pip
+    8) Åpne Terminal
+    9) Skriv 'pip install pygame'
+        7.1) Hvis det ikke funker, prøv 'pip3 install pygame'
+        7.2) Hvis det ikke funker må du dobbeltsjekke installeringene av Python3 og pip3
+-----------------------------------------------------------------------------------------
