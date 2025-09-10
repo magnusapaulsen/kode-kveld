@@ -10,7 +10,7 @@ clock = pygame.time.Clock() # Create game clock
 fps = 60 # Variable for refresh rate
 
 spawn_timer = 0 # Variable that decides when to spawn a new enemy
-enemy_spawn_cooldown = fps * 2 # Variable that decides the spawn rate
+enemy_spawn_cooldown = fps # Variable that decides the spawn rate
 enemy_spawn_cooldown_min = fps // 2 # Variable that decides the minimum spawn rate
 
 font = pygame.font.SysFont(None, 50) # Variable holding my font, it is just a basic font
