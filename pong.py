@@ -53,10 +53,10 @@ class Paddle(pygame.sprite.Sprite):
         '''
         if self.control_type == 'Player': # Check control type
             keys = pygame.key.get_pressed() # Get input
-            self.move(keys[pygame.K_UP], keys[pygame.K_DOWN]) # Run the movement function based on the input
+            self.move(keys[pygame.K_w], keys[pygame.K_s]) # Run the movement function based on the input
         elif self.control_type == 'Player2':
             keys = pygame.key.get_pressed()
-            self.move(keys[pygame.K_w], keys[pygame.K_s])
+            self.move(keys[pygame.K_UP], keys[pygame.K_DOWN])
         elif self.control_type == 'Computer': # If control type is computer
             self.auto_move() # Run auto move function
 
