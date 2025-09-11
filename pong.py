@@ -10,7 +10,7 @@ clock = pygame.time.Clock()
 fps = 60
 
 # Load image of midline, create a rect of it and place it at the center of the screen
-midline_image = pygame.image.load('assets/midline.png').convert_alpha()
+midline_image = pygame.image.load('assets/pong/midline.png').convert_alpha()
 midline_rect = midline_image.get_rect()
 midline_rect.x, midline_rect.y = 295, 0
 
@@ -21,7 +21,7 @@ bounce_factor = 5 # Decides how much the balls trajectory will be influenced by 
 class Paddle(pygame.sprite.Sprite):
     def __init__(self, x, y, y_v, s, ct):
         super().__init__()
-        self.image = pygame.image.load('assets/paddle.png').convert_alpha()
+        self.image = pygame.image.load('assets/pong/paddle.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
         self.y_v = y_v # Set starting velocity of paddle (0)
@@ -64,7 +64,7 @@ class Paddle(pygame.sprite.Sprite):
 class Ball(pygame.sprite.Sprite):
     def __init__(self, x, y, s):
         super().__init__()
-        self.image = pygame.image.load('assets/ball.png').convert_alpha()
+        self.image = pygame.image.load('assets/pong/ball.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x, self.rect.y = x, y
         self.speed = s
@@ -78,7 +78,11 @@ class Ball(pygame.sprite.Sprite):
         self.rect.y += self.y_v
 
         # Check y-position to reverse movement on edges, bounce
-        if self.rect.top <= 0 or self.rect.bottom >= height:
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.y_v = -self.y_v
+        if self.rect.bottom > height:
+            self.rect.bottom = height
             self.y_v = -self.y_v
         
         # Reset to middle with random direction if ball goes beyond paddle

@@ -16,7 +16,7 @@ class Snake():
         self.body = [(10 * cell, 10 * cell), (9 * cell, 10 * cell), (8 * cell, 10 * cell)]
         self.direction = 'Right'
         self.growing = False
-        self.image = pygame.image.load('assets/snake.png').convert_alpha()
+        self.image = pygame.image.load('assets/snake/snake.png').convert_alpha()
 
     def move(self):
         x, y = self.body[0]
@@ -59,7 +59,7 @@ class Snake():
     
 class Food:
     def __init__(self):
-        self.image = pygame.image.load('assets/apple.png').convert_alpha()
+        self.image = pygame.image.load('assets/snake/apple.png').convert_alpha()
         self.position = self.random_position()
 
     def random_position(self):

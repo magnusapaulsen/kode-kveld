@@ -20,7 +20,7 @@ score = 0 # Variable for my score
 class Player(pygame.sprite.Sprite): # Create the player class with parent class Sprite
     def __init__(self, x, y, s): # Initialize the player with x-position, y-position and speed
         super().__init__() # Initialize the parent class Sprite
-        self.image = pygame.image.load('assets/player.png').convert_alpha() # Create a surface holding the image of the player
+        self.image = pygame.image.load('assets/space_invaders/player.png').convert_alpha() # Create a surface holding the image of the player
         self.rect = self.image.get_rect() # Create a rectangle from the player's surface, to be used in collisions and logic
         self.rect.x, self.rect.y = x, y # Set position of the rectangle to the x-position and y-position we had as arguments
         self.speed = s # Set speed to the speed we had as an argument
@@ -46,7 +46,7 @@ class Player(pygame.sprite.Sprite): # Create the player class with parent class 
 class Enemy(pygame.sprite.Sprite): # Create the enemy class with parent class Sprite
     def __init__(self, x, y, s): # Initialize the enemy with x-position, y-position and speed
         super().__init__() # Initialize the parent class Sprite
-        self.image = pygame.image.load('assets/enemy.png').convert_alpha() # Create surface for holding the image of the enemy
+        self.image = pygame.image.load('assets/space_invaders/enemy.png').convert_alpha() # Create surface for holding the image of the enemy
         self.rect = self.image.get_rect() # Create a rectangle from the enemy's surface, to be used in collisions and logic
         self.rect.x, self.rect.y = x, y # Set position of the rectangle to the x-position and y-position we had as arguments
         self.speed = s # Set speed to the speed we had as an argument
@@ -59,7 +59,7 @@ class Enemy(pygame.sprite.Sprite): # Create the enemy class with parent class Sp
 class Bullet(pygame.sprite.Sprite): # Create the bullet class with parent class Sprite
     def __init__(self, x, y, s): # Initialize the bullet with x-position, y-position and speed
         super().__init__() # Initialize the parent class Sprite
-        self.image = pygame.image.load('assets/bullet.png').convert_alpha() # Create the surface for holding the image of the bullet
+        self.image = pygame.image.load('assets/space_invaders/bullet.png').convert_alpha() # Create the surface for holding the image of the bullet
         self.rect = self.image.get_rect() # Create a rectangle from the bullet's surface, to be used in collisions and logic
         self.rect.x, self.rect.y = x, y # Set position of the rectangle to the x-position and y-position we had as arguments
         self.speed = s # Set speed to the speed we had as arguments
