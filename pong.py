@@ -108,7 +108,7 @@ all_sprites.add(player)
 player_sprites.add(player)
 paddle_sprites.add(player)
 
-enemy = Paddle(560, 160, 0, 4, 'Player2')
+enemy = Paddle(560, 160, 0, 4, 'Computer')
 all_sprites.add(enemy)
 enemy_sprites.add(enemy)
 paddle_sprites.add(enemy)
